@@ -6,7 +6,7 @@
     "node": "18.12.1"
   },
   "scripts": {
-    "test": "playwright test src/components/.*/*.spec.tsx?$",
+    "test": "playwright test src/.*/*.spec.tsx?$",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
