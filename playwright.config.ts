@@ -38,6 +38,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    // headlessをfalseにするとテスト実行時にブラウザが表示される
+    headless: true,
   },
 
   /* Configure projects for major browsers */
@@ -82,8 +84,9 @@ export default defineConfig({
   // outputDir: 'test-results/',
 
   /* Run your local dev server before starting the tests */
-  // webServer: {
-  //   command: 'npm run start',
-  //   port: 3000,
-  // },
+  webServer: {
+    command: "npm run storybook",
+    port: 6006,
+    reuseExistingServer: !process.env.CI,
+  },
 });
