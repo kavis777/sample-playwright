@@ -2,7 +2,9 @@
   "name": "sample-playwright",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": "18.12.1"
+  },
   "scripts": {
     "test": "playwright test src/components/.*/*.spec.tsx?$",
     "storybook": "start-storybook -p 6006",
@@ -14,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kavis777/sample-playwright/issues"
   },
@@ -26,8 +28,8 @@
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack4": "^6.5.16",
-    "@storybook/manager-webpack4": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0"
